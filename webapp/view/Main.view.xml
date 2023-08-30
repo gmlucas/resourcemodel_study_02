@@ -1,0 +1,34 @@
+<mvc:View controllerName="com.sample.resourcemodelstudy2.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+       <content>
+            <HBox class="sapUiLargeMargin">
+                <VBox class="sapUiTinyMargin">
+                    <Text text="original (i18n):" class="sapUiTinyMargin"/>
+                    <Text text="fox = {i18n>simplefox}" class="sapUiTinyMargin"/>
+                    <Text text="fox = {i18n>cleverfox}" class="sapUiTinyMargin"/>
+                    <Text text="fox = {i18n>compliment}" class="sapUiTinyMargin"/>
+                    <Text text="fox = {i18n>hatred}" class="sapUiTinyMargin"/>
+                    <Text text="fox = {i18n>hope}" class="sapUiTinyMargin"/>
+                </VBox>
+                <VBox class="sapUiTinyMargin">
+                    <Text text="deep (i19n):" class="sapUiTinyMargin"/>
+                    <Text text="fox = {i19n>simplefox}" class="sapUiTinyMargin"/>
+                    <Text text="fox = {i19n>cleverfox}" class="sapUiTinyMargin"/>
+                    <Text text="fox = {i19n>compliment}" class="sapUiTinyMargin"/>
+                    <Text text="fox = {i19n>hatred}" class="sapUiTinyMargin"/>
+                    <Text text="fox = {i19n>hope}" class="sapUiTinyMargin"/>
+                    <Input 
+                        placeholder="{i19n>speed} and {i19n>color}"
+                        valueState="Error"
+                        valueStateText="{i19n>cleverfox}"/>
+                    <Button text="{i19n>speed}-{i19n>color}"/>
+                    <Text text="fox with param= {i19n>parametricfox}" class="sapUiTinyMargin"/>
+                    <Text id="computedfox" text="computed fox" class="sapUiTinyMargin"/>
+                    
+                </VBox>
+            </HBox>        
+        </content>
+    </Page>
+</mvc:View>
